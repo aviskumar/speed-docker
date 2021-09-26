@@ -1,0 +1,9 @@
+build:
+  docker:
+    pip: Dockerfile
+run:
+  pip: bash telethon.sh
+  worker:
+    command:
+      - bash pyrogram.sh
+    image: pip
